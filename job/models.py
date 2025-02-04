@@ -14,7 +14,6 @@ class Job(models.Model):
     published_at = models.DateTimeField(auto_now=True)
     vacancy = models.IntegerField(default=1)
     salary = models.IntegerField(default=0)
-    #category
     experince = models.IntegerField(default=1)
 
     def __str__(self):
