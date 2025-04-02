@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+{% load bootstrap5 %}
+
+{% block content %}
+
+
+<form method="post">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <input type="submit" value="Sginup" class="boxed-btn3 w-100"></form>
+
+{# Assumes you set up the password_reset view in your URLconf #}
+
+{% endblock %}
